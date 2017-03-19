@@ -8,7 +8,7 @@ $('#btn').click(function(event) {
   var oArea =$('#area').val();
   $('.list').empty();
  	$.ajax({
-  	url: 'http://opendata.khcc.gov.tw/public/OD_Heritage.ashx',
+  	url: 'data.json',
   	dataType: 'json',
   	success: function(data) {
       for(var i =0;i<=data.length;i++){
